@@ -50,7 +50,9 @@
       </toolbar>
       <component id="26974" class="javax.swing.JList" binding="list1" default-binding="true">
         <constraints border-constraint="Center"/>
-        <properties/>
+        <properties>
+          <model/>
+        </properties>
       </component>
       <grid id="521cc" layout-manager="GridBagLayout">
         <constraints border-constraint="West"/>
@@ -63,7 +65,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="CheckBox"/>
+              <text value="CheckBox1"/>
             </properties>
           </component>
           <component id="6da3" class="javax.swing.JCheckBox" binding="checkBox2" default-binding="true">
@@ -72,7 +74,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="CheckBox"/>
+              <text value="CheckBox2"/>
             </properties>
           </component>
           <component id="b1b86" class="javax.swing.JCheckBox" binding="checkBox3" default-binding="true">
@@ -81,7 +83,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="CheckBox"/>
+              <text value="CheckBox3"/>
             </properties>
           </component>
           <component id="60b6" class="javax.swing.JCheckBox" binding="checkBox4" default-binding="true">
@@ -90,7 +92,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="CheckBox"/>
+              <text value="CheckBo4"/>
             </properties>
           </component>
           <component id="203e" class="javax.swing.JCheckBox" binding="checkBox5" default-binding="true">
@@ -99,7 +101,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="CheckBox"/>
+              <text value="CheckBox5"/>
             </properties>
           </component>
           <component id="e478c" class="javax.swing.JCheckBox" binding="checkBox6" default-binding="true">
@@ -108,7 +110,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="CheckBox"/>
+              <text value="CheckBox6"/>
             </properties>
           </component>
           <component id="eb48d" class="javax.swing.JCheckBox" binding="checkBox7" default-binding="true">
@@ -117,7 +119,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="CheckBox"/>
+              <text value="CheckBox7"/>
             </properties>
           </component>
           <component id="726b1" class="javax.swing.JCheckBox" binding="checkBox8" default-binding="true">
@@ -126,7 +128,7 @@
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="CheckBox"/>
+              <text value="CheckBox8"/>
             </properties>
           </component>
         </children>
