@@ -5,6 +5,8 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.util.ArrayList;
+import java.util.Arrays;
+import java.util.Collections;
 
 public class Main extends JFrame {
 
@@ -75,12 +77,17 @@ public class Main extends JFrame {
         @Override
         public void itemStateChanged(ItemEvent itemEvent) {
             System.out.println(itemEvent.getStateChange() == ItemEvent.SELECTED);
+            String element = ((JCheckBox) itemEvent.getItem()).getText();
             if (itemEvent.getStateChange() == ItemEvent.SELECTED) {
-                dlm.addElement(itemEvent.paramString());
+                dlm.addElement(element);
+                System.out.println(element);
             } else {
-                dlm.removeElement(itemEvent.paramString());
+                if (dlm.contains(element)) {
+                    dlm.removeElementAt(dlm.indexOf(element));
+                };
+
             }
-            System.out.println(itemEvent.paramString());
+
 
         }
     }
