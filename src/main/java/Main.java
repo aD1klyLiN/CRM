@@ -5,13 +5,11 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
 
 public class Main extends JFrame {
 
     private JPanel rootPanel;
-    private JButton button1;
+    private JButton btnOpenDBase;
     private JButton button2;
     private JButton button3;
     private JButton button4;
@@ -51,6 +49,8 @@ public class Main extends JFrame {
         checkBox7.addItemListener(new ActionL());
         checkBox8.addItemListener(new ActionL());
 
+        btnOpenDBase.addActionListener(actionEvent -> onOpenDBaseClick());
+
         dlm = new DefaultListModel<>();
         list = new ArrayList<>();
         dlm.addAll(list);
@@ -59,6 +59,12 @@ public class Main extends JFrame {
         setContentPane(rootPanel);
         setResizable(false);
         setVisible(true);
+    }
+
+    private void onOpenDBaseClick() {
+        JFileChooser jFileChooser = new JFileChooser();
+        int res = jFileChooser.showOpenDialog(this);
+
     }
 
     public static void main(String[] args) {

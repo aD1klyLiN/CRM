@@ -12,10 +12,10 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="7bf3d" class="javax.swing.JButton" binding="button1" default-binding="true">
+          <component id="7bf3d" class="javax.swing.JButton" binding="btnOpenDBase">
             <constraints/>
             <properties>
-              <text value="Button"/>
+              <text value="Open..."/>
             </properties>
           </component>
           <component id="83840" class="javax.swing.JButton" binding="button2" default-binding="true">
