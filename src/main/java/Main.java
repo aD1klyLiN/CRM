@@ -10,26 +10,12 @@ public class Main extends JFrame {
 
     private JPanel rootPanel;
     private JButton btnOpenDBase;
-    private JButton button2;
-    private JButton button3;
-    private JButton button4;
-    private JButton button5;
     private JList<String> list1;
-    private JCheckBox checkBox1;
-    private JCheckBox checkBox2;
-    private JCheckBox checkBox3;
-    private JCheckBox checkBox4;
-    private JCheckBox checkBox5;
-    private JCheckBox checkBox6;
-    private JCheckBox checkBox7;
-    private JCheckBox checkBox8;
+    private JButton button1;
 
     public static final int WIDTH = 640;
     public static final int HEIGHT = 480;
     public static final String WINDOW_TITLE = "CRM Main Window";
-
-    private ArrayList<String> list;
-    private DefaultListModel<String> dlm;
 
     public Main() throws HeadlessException {
         super(WINDOW_TITLE);
@@ -40,21 +26,7 @@ public class Main extends JFrame {
         int y = screenBounds.height/2 - HEIGHT/2;
         setBounds(x, y, WIDTH, HEIGHT);
 
-        checkBox1.addItemListener(new ActionL());
-        checkBox2.addItemListener(new ActionL());
-        checkBox3.addItemListener(new ActionL());
-        checkBox4.addItemListener(new ActionL());
-        checkBox5.addItemListener(new ActionL());
-        checkBox6.addItemListener(new ActionL());
-        checkBox7.addItemListener(new ActionL());
-        checkBox8.addItemListener(new ActionL());
-
         btnOpenDBase.addActionListener(actionEvent -> onOpenDBaseClick());
-
-        dlm = new DefaultListModel<>();
-        list = new ArrayList<>();
-        dlm.addAll(list);
-        list1.setModel(dlm);
 
         setContentPane(rootPanel);
         setResizable(false);
@@ -71,7 +43,7 @@ public class Main extends JFrame {
         SwingUtilities.invokeLater(Main::new);
     }
 
-    private class ActionL implements ActionListener, ItemListener {
+    private class ActionL implements ActionListener {
 
         @Override
         public void actionPerformed(ActionEvent actionEvent) {
@@ -80,21 +52,5 @@ public class Main extends JFrame {
 
         }
 
-        @Override
-        public void itemStateChanged(ItemEvent itemEvent) {
-            System.out.println(itemEvent.getStateChange() == ItemEvent.SELECTED);
-            String element = ((JCheckBox) itemEvent.getItem()).getText();
-            if (itemEvent.getStateChange() == ItemEvent.SELECTED) {
-                dlm.addElement(element);
-                System.out.println(element);
-            } else {
-                if (dlm.contains(element)) {
-                    dlm.removeElementAt(dlm.indexOf(element));
-                };
-
-            }
-
-
-        }
     }
 }
