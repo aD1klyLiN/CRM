@@ -7,47 +7,6 @@
     <properties/>
     <border type="none"/>
     <children>
-      <toolbar id="35d5d">
-        <constraints border-constraint="North"/>
-        <properties/>
-        <border type="none"/>
-        <children>
-          <component id="7bf3d" class="javax.swing.JButton" binding="button1" default-binding="true">
-            <constraints/>
-            <properties>
-              <text value="Button"/>
-            </properties>
-          </component>
-          <component id="83840" class="javax.swing.JButton" binding="button2" default-binding="true">
-            <constraints/>
-            <properties>
-              <text value="Button"/>
-            </properties>
-          </component>
-          <component id="b42f" class="javax.swing.JButton" binding="button3" default-binding="true">
-            <constraints/>
-            <properties>
-              <text value="Button"/>
-            </properties>
-          </component>
-          <component id="f9382" class="javax.swing.JToolBar$Separator">
-            <constraints/>
-            <properties/>
-          </component>
-          <component id="dfbc5" class="javax.swing.JButton" binding="button4" default-binding="true">
-            <constraints/>
-            <properties>
-              <text value="Button"/>
-            </properties>
-          </component>
-          <component id="792b0" class="javax.swing.JButton" binding="button5" default-binding="true">
-            <constraints/>
-            <properties>
-              <text value="Button"/>
-            </properties>
-          </component>
-        </children>
-      </toolbar>
       <component id="26974" class="javax.swing.JList" binding="list1" default-binding="true">
         <constraints border-constraint="Center"/>
         <properties>
@@ -59,76 +18,26 @@
         <properties/>
         <border type="none"/>
         <children>
-          <component id="4a58c" class="javax.swing.JCheckBox" binding="checkBox1" default-binding="true">
+          <component id="7bf3d" class="javax.swing.JButton" binding="btnOpenDBase">
             <constraints>
-              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
               <gridbag weightx="0.0" weighty="0.0"/>
             </constraints>
             <properties>
-              <text value="CheckBox1"/>
+              <text value="Open..."/>
             </properties>
           </component>
-          <component id="6da3" class="javax.swing.JCheckBox" binding="checkBox2" default-binding="true">
-            <constraints>
-              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
+        </children>
+      </grid>
+      <grid id="6db0" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="East"/>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="9f219" class="javax.swing.JButton" binding="button1" default-binding="true">
+            <constraints border-constraint="Center"/>
             <properties>
-              <text value="CheckBox2"/>
-            </properties>
-          </component>
-          <component id="b1b86" class="javax.swing.JCheckBox" binding="checkBox3" default-binding="true">
-            <constraints>
-              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-            <properties>
-              <text value="CheckBox3"/>
-            </properties>
-          </component>
-          <component id="60b6" class="javax.swing.JCheckBox" binding="checkBox4" default-binding="true">
-            <constraints>
-              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-            <properties>
-              <text value="CheckBo4"/>
-            </properties>
-          </component>
-          <component id="203e" class="javax.swing.JCheckBox" binding="checkBox5" default-binding="true">
-            <constraints>
-              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-            <properties>
-              <text value="CheckBox5"/>
-            </properties>
-          </component>
-          <component id="e478c" class="javax.swing.JCheckBox" binding="checkBox6" default-binding="true">
-            <constraints>
-              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-            <properties>
-              <text value="CheckBox6"/>
-            </properties>
-          </component>
-          <component id="eb48d" class="javax.swing.JCheckBox" binding="checkBox7" default-binding="true">
-            <constraints>
-              <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-            <properties>
-              <text value="CheckBox7"/>
-            </properties>
-          </component>
-          <component id="726b1" class="javax.swing.JCheckBox" binding="checkBox8" default-binding="true">
-            <constraints>
-              <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
-              <gridbag weightx="0.0" weighty="0.0"/>
-            </constraints>
-            <properties>
-              <text value="CheckBox8"/>
+              <text value="Button"/>
             </properties>
           </component>
         </children>
