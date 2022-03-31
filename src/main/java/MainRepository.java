@@ -1,6 +1,14 @@
+import java.util.Collections;
+import java.util.List;
+
 public class MainRepository {
 
-    public MainRepository() {
+    private List<Employee> employeesList = Collections.emptyList();
+
+    public MainRepository(List<Employee> list) {
+
+        this.employeesList.addAll(list);
+
     }
 
     private class Mock {
