@@ -11,6 +11,10 @@ public class MainRepository {
 
     }
 
+    private class DBOpenHelper {
+
+    }
+
     private class Mock {
 
         private String[] employees = {"Иванов", "Петров", "Смирнов", "Кузнецов"};
