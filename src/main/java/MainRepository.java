@@ -1,5 +1,7 @@
+import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
+import java.util.Vector;
 
 public class MainRepository {
 
@@ -10,6 +12,11 @@ public class MainRepository {
         this.employeesList.addAll(list);
 
     }
+
+    public Vector<Employee> getEmployeesVector(Collection<Employee> c) {
+        return new Vector<>(c);
+    }
+
 
     private class DBOpenHelper {
 

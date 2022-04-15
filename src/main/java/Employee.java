@@ -2,12 +2,12 @@ public final class Employee {
 
     private final int ID;
     private final String family;
-    private final String post;
+    private final String name;
 
-    private Employee(int ID, String family, String post) {
+    private Employee(int ID, String family, String name) {
         this.ID = ID;
         this.family = family;
-        this.post = post;
+        this.name = name;
     }
 
     public int getID() {
@@ -18,7 +18,7 @@ public final class Employee {
         return family;
     }
 
-    public String getPost() {
-        return post;
+    public String getName() {
+        return name;
     }
 }
