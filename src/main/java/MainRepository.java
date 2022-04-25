@@ -1,3 +1,6 @@
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.SQLException;
 import java.util.Collection;
 import java.util.Collections;
 import java.util.List;
@@ -10,6 +13,8 @@ public class MainRepository {
     public MainRepository(List<Employee> list) {
 
         this.employeesList.addAll(list);
+        DBOpenHelper dbOpenHelper = new DBOpenHelper();
+        dbOpenHelper.doConnect();
 
     }
 
@@ -19,6 +24,23 @@ public class MainRepository {
 
 
     private class DBOpenHelper {
+        Connection connection;
+
+        void doConnect() {
+            connection = null;
+            try {
+                Class.forName("org.sqlite.JDBC");
+                System.out.println("Class found");
+            } catch (ClassNotFoundException e) {
+                throw new RuntimeException(e);
+            }
+            try {
+                connection = DriverManager.getConnection("jdbc:sqlite:src:main:resources:base.db3");
+                System.out.println("Connection activated");
+            } catch (SQLException e) {
+                throw new RuntimeException(e);
+            }
+        }
 
     }
 

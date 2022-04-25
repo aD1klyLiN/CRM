@@ -5,6 +5,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ItemEvent;
 import java.awt.event.ItemListener;
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class Main extends JFrame {
 
@@ -25,6 +26,8 @@ public class Main extends JFrame {
         int x = screenBounds.width/2 - WIDTH/2;
         int y = screenBounds.height/2 - HEIGHT/2;
         setBounds(x, y, WIDTH, HEIGHT);
+
+        MainRepository mainRepository = new MainRepository(Collections.emptyList());
 
         btnOpenDBase.addActionListener(actionEvent -> onOpenDBaseClick());
 
