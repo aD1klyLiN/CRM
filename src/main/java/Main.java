@@ -30,10 +30,16 @@ public class Main extends JFrame {
         MainRepository mainRepository = new MainRepository(Collections.emptyList());
 
         btnOpenDBase.addActionListener(actionEvent -> onOpenDBaseClick());
+        button1.addActionListener(actionEvent -> onOpenDailyListWindow());
 
         setContentPane(rootPanel);
         setResizable(false);
         setVisible(true);
+    }
+
+    private void onOpenDailyListWindow() {
+        this.setVisible(false);
+        DailyListWindow.getInstance().setVisible(true);
     }
 
     private void onOpenDBaseClick() {
@@ -46,14 +52,6 @@ public class Main extends JFrame {
         SwingUtilities.invokeLater(Main::new);
     }
 
-    private class ActionL implements ActionListener {
 
-        @Override
-        public void actionPerformed(ActionEvent actionEvent) {
 
-            System.out.println(actionEvent.getActionCommand());
-
-        }
-
-    }
 }
