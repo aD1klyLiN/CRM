@@ -39,7 +39,7 @@ public class Main extends JFrame {
 
     private void onOpenDailyListWindow() {
         this.setVisible(false);
-        DailyListWindow.getInstance().setVisible(true);
+        new DailyListWindow();
     }
 
     private void onOpenDBaseClick() {
